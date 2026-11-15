@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Аренда спецтехники — Автовышка Томск</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="catalog-screen" class="screen active" aria-label="Каталог"></section>
+    <section id="booking-screen" class="screen" aria-label="Бронирование"></section>
+    <section id="owner-screen" class="screen" aria-label="Кабинет владельца"></section>
+    <nav class="bottom-nav" aria-label="Основная навигация">
+      <button class="nav-button active" data-screen="catalog" aria-label="Каталог"><span>▦</span>Каталог</button>
+      <button class="nav-button" data-screen="booking" aria-label="Бронирование"><span>＋</span>Бронь</button>
+      <button class="nav-button" data-screen="owner" aria-label="Кабинет владельца"><span>◉</span>Владелец</button>
+    </nav>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
